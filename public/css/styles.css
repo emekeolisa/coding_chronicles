@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital@1&family=Petemoss&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: whitesmoke;
+}
+
+navi {
+    width: 100%;
+    top: 0;
+    background-color: rgb(14, 13, 13);
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.logoImg {
+    margin: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: rgb(206, 150, 8);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.book {
+    color: whitesmoke;
+    background-color: #3384a1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 10px;
+    height: 30px;
+    width: 120%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.book:hover {
+    background-color: rgb(206, 150, 8);
+    opacity: 60%;
+}
+
+.burger {
+    display: none;
+    transition: 250ms ease;
+    cursor: pointer
+}
+
+.lineOne,
+.lineTwo,
+.lineThree {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 7px;
+    transition: 0.4s;
+}
+
+.change .lineOne {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .lineTwo {
+    display: none;
+}
+
+.change .lineThree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .burger {
+    transition: 250ms ease;
+}
+
+.banner {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 70px;
+    /* color: blue; */
+}
+
+.iColor {
+    color: #3384a1;
+}
+
+.banner h2 {
+    text-align: center;
+    /* font-size: 45px; */
+    /* color: blue; */
+}
+
+.banner p {
+    text-align: center;
+    font-size: 20px;
+    /* color: blue; */
+}
+
+.banner button {
+    margin: auto;
+    display: block;
+    font-size: 17px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #3384a1;
+    letter-spacing: 2px;
+}
+
+.banner button:hover {
+    background-color: rgb(206, 150, 8);
+    opacity: 60%;
+}
+
+.container {
+    /* background-color: black; */
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section1 {
+    color: black;
+}
+
+.packageBtn {
+    text-decoration: none;
+}
+
+.buttons {
+    float: right;
+    display: flex;
+    margin-right: 10px;
+}
+
+.buttons a {
+    margin-right: 10px;
+}
+
+.formText {
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #12141b;
+    width: 100%;
+    font-size: 10px;
+    height: 70px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* padding-left: 35%; */
+}
+
+.footerTxt {
+    /* text-align: center; */
+    margin: 0 auto;
+}

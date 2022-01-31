@@ -1,0 +1,25 @@
+<!-- Head -->
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <!-- navigation -->
+        <%- include('layouts/navigation.ejs')%>
+
+            <div class="container">
+                <br>
+                <br>
+                <h1>
+                    <%= blog.header%>
+                </h1>
+                <p>Content
+                    <%= blog.content%>
+                </p>
+                <button type="button" class="btn btn-info">Edit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+
+            </div>
+            <!-- footer -->
+            <%- include('layouts/footer.ejs')%>
+    </body>
+
+    </html>

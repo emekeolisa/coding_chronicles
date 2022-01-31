@@ -1,0 +1,47 @@
+<!-- Head -->
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <!-- navigation -->
+        <%- include('layouts/navigation.ejs')%>
+
+            <!-- blog content -->
+
+            <div class="container">
+                <br>
+                <br>
+                <% for (let p of writeBlog) {%>
+                    <div class="section1">
+                        <div class="header">
+                            <h3>
+                                <%= p.header%>
+                            </h3>
+                        </div>
+                        <br>
+                        <div class="blog">
+                            <p>
+                                <%= p.content%>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-success" href="/blogPage/<%= p._id%>" role="button">View</a>
+                            <a class="btn btn-info" href="/editBlog/<%= p._id%>" role="button">Edit</a>
+
+                            <form action="/deleteBlog" method="POST">
+                                <input type="hidden" name="id" value="<%=p._id%>">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <%
+                }
+                    %>
+
+
+
+            </div>
+
+            <!-- footer -->
+            <%- include('layouts/footer.ejs')%>

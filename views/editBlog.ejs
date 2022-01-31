@@ -1,0 +1,34 @@
+<!-- Head -->
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <!-- navigation -->
+        <%- include('layouts/navigation.ejs')%>
+
+            <div class="container">
+                <br>
+                <br>
+                <form action="/editBlog" method="POST">
+                    <input type="hidden" name="id" value="<%= blog.id%>">
+                    <h3>
+                        <label class="formText ">Header</label>
+                        <br>
+                        <input type="text " name="header" value="<%= blog.header%>">
+                    </h3>
+                    <br>
+                    <br>
+                    <h3>
+                        <label class="formText">Blog Content</label>
+                        <br>
+                        <textarea type="text" name="content" ws="7 " cols="70 "><%= blog.content%></textarea>
+                        <!-- <input type="text " name="content "> -->
+                    </h3>
+                    <button type="submit " class="btn btn-success ">Publish Post</button>
+                </form>
+
+            </div>
+            <!-- footer -->
+            <%- include('layouts/footer.ejs')%>
+    </body>
+
+    </html>
